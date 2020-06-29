@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+@import "./variables";
+$sm: 320px;
+$md: 768px;
+
+html {
+  font-size: 14px;
+  @media screen and (min-width: $md) {
+    font-size: 16px;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 95%;
+  color: $light;
+  background: $dark;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.text-18 {
+  font-size: 1.125rem;
+}
+
+.text-white {
+  color: white;
+}
+
+.btn {
+  border-radius: 0;
+  padding: 0.5rem 2rem !important;
+}
+
+ul {
+  list-style: none;
+}
+
+.form-control {
+  background-color: transparent;
+  border-radius: 0;
+}
+
+a {
+  color: $light;
+  &:hover {
+    color: $light;
+    font-weight: bold;
+  }
+}
+
+header {
+  background: url("/images/bg.png") no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+
+  .active {
+    font-weight: bold;
+  }
+
+  #hero {
+    height: 100%;
+    .container {
+      height: 80%;
+      .wrapper {
+        display: flex;
+        justify-content: space-between;
+      }
+      .left_hero {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        width: 26rem;
+      }
+      .right_hero {
+        height: 100%;
+        display: flex;
+        // flex-direction: column;
+        align-items: flex-end;
+      }
+    }
+  }
+}
+
+// About Me
+
+#about {
+  height: 100%;
+  .container {
+    height: 100%;
+  }
+  .row {
+    height: 100%;
+  }
+  .left_about {
+    width: 100%;
+
+    .image {
+      display: grid;
+      place-items: center;
+      height: 100%;
+      width: 100%;
+      img {
+        width: inherit;
+        max-width: 28rem;
+      }
+    }
+  }
+  .right_about {
+    display: grid;
+    place-items: center;
+    // height: 100%;
+  }
+}
+
+#gallery {
+  height: 100%;
+  .col-md-4 {
+    width: 100%;
+    margin-top: 1rem;
+    img {
+      width: inherit;
+      height: 20rem;
+      border: 2px solid green;
+    }
+  }
+}
